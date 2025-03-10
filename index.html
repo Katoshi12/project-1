@@ -6,15 +6,16 @@
   <title>Freelancer Portfolio</title>
   <link rel="stylesheet" href="./css/main.css">
   <link rel="stylesheet" href="./css/media.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />   
 </head>
 <body>
   <header class="header">
     <div class="container">
-      <div class="header__navigation">
+      <div class="header__menu">
         <a href="#!" class="logo header__logo">
           Kelvin
         </a>
-        <nav class="header__menu">
+        <nav id="navigation" class="header__navigation">
           <ul class="header__list">
             <li class="header__item">
               <a href="#!" class="header__link active">Home</a>
@@ -32,18 +33,21 @@
               <a href="#!" class="header__link">Contact</a>
             </li>
           </ul>
+          <button id="burger-menu" class="burger-menu">
+            <img id="burger-img" src="./img/icons/burger-menu.svg" alt="Burger Menu">
+          </button>
         </nav>
       </div>
       <div class="header__hero">
-        <div class="header__content">
+        <div data-aos="fade-up" class="header__content">
           <h1 class="header__title">
-            Kelvin Kramer <br> Designer & Developer
+            Kelvin Kramer <br> <span>Designer & Developer</span>
           </h1>
           <p class="header__description">
             I'm a portrait, fashion and lifestyle photographer living In New York City. During my thirteen year tenure here.
           </p>
         </div>
-        <div class="header__img">
+        <div data-aos="fade-left" class="header__img">
           <img src="./img/header/hero.png" alt="Kelvin Thinking">
         </div>
       </div>
@@ -54,7 +58,7 @@
     <section class="section service">
       <div class="container">
         <div class="service__content">
-          <article class="service__card">
+          <article data-aos="fade-down" class="service__card">
             <img
             class="service__img"
             src="./img/services/01.svg"
@@ -67,7 +71,7 @@
               Our design is translated into comprehensive digital environments built on latest development standards.
             </p>
           </article>
-          <article class="service__card">
+          <article data-aos="fade-down" class="service__card">
             <img
             class="service__img"
             src="./img/services/02.svg"
@@ -80,7 +84,7 @@
               Our design is translated into comprehensive digital environments built on latest development standards.
             </p>
           </article>
-          <article class="service__card">
+          <article data-aos="fade-down" class="service__card">
             <img
             class="service__img"
             src="./img/services/03.svg"
@@ -103,7 +107,7 @@
           Portfolio
         </h2>
 
-        <div class="portfolio__project">
+        <div data-aos="flip-up" class="portfolio__project">
           <img src="./img/portfolio/01.jpg" alt="Online fashion store" class="project__img">
             <h3>
               <a
@@ -116,7 +120,7 @@
             </h3>
         </div>
 
-        <div class="portfolio__project">
+        <div data-aos="flip-up" class="portfolio__project">
           <img src="./img/portfolio/02.jpg" alt="Reebok Store" class="project__img">
             <h3>
               <a
@@ -129,7 +133,7 @@
             </h3>
         </div>
 
-        <div class="portfolio__project">
+        <div data-aos="flip-up" class="portfolio__project">
           <img src="./img/portfolio/03.jpg" alt="Braun Landing Page" class="project__img">
             <h3>
               <a
@@ -147,29 +151,30 @@
     </section>
   </main>
 
-  <footer class="footer">
+  <footer class="footer section">
     <div class="container">
       <div class="footer__contacts">
         <h2 class="title-1">
           Contacts
         </h2>
-        <p class="contacts__description">
+        <p data-aos="fade-down" class="contacts__description">
           Want to know more or just chat?
           <br>
           You are welcome!
         </p>
-        <a href="#!" class="button">Send message</a>
+        <a data-aos="fade-down" href="#!" class="button">Send message</a>
       </div>
-      <div class="footer__social">
+      <div data-aos="zoom-in" class="footer__social">
         <img src="./img/socials/LinkedIn.svg" alt="LinkedIn">
         <img src="./img/socials/Instargam.svg" alt="Instargam">
         <img src="./img/socials/Behance.svg" alt="Behance">
         <img src="./img/socials/Dribble.svg" alt="Dribble">
       </div>
-      <p class="footer__text">Like me on <br>
+      <p data-aos="fade-up" class="footer__text">Like me on <br>
         LinkedIn, Instagram, Behance, Dribble</p>
     </div>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>  
   <script src="./js/main.js"></script>
 </body>
 </html>

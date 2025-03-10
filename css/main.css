@@ -33,6 +33,9 @@ body {
   max-width: calc(var(--container-width) + var(--padding-container-x) * 2);
   margin-inline: auto;
   padding-inline: var(--padding-container-x);
+}
+
+.section {
   padding-block: 90px;
 }
 
@@ -68,14 +71,15 @@ h6 {
   padding-top: 46px;
 }
 
-.header__navigation {
+.header__menu {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
   margin-bottom: 76px;
 }
 
 .logo {
+  display: inline-block;
   position: relative;
   font-weight: 700;
   font-size: 32px;
@@ -107,6 +111,10 @@ h6 {
 .header__link {
   color: var(--color-dark);
   transition: all ease-in var(--transition-duration);
+}
+
+.burger-menu {
+  display: none;
 }
 
 .header__link:hover {
@@ -144,7 +152,15 @@ h6 {
 
 .service__content {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   column-gap: 30px;
+  row-gap: 60px;
+}
+
+.service__card {
+  flex: 1 1 0;
+  max-width: 315px;
 }
 
 .service__img {
